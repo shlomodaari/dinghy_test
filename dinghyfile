@@ -19,6 +19,7 @@
           "type": "wait",
           "waitTime": 15
        }
+    },
     {
       "application": "dinghytestapp",
       "name": "TestingSecondPipeline",
