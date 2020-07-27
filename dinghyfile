@@ -1,0 +1,20 @@
+{
+  "application": "dinghytestapp",
+  "spec": {
+    "email":"austin.thao5@gmail.com",
+    "description":"Trying to update the application from Dinghy"
+  },
+  "pipelines": [
+    {
+      "application": "dinghytestapp",
+      "name": "changeNameofPipeline",
+      "stages": [
+        {
+          "name": "one",
+          "type": "wait",
+          "waitTime": 20
+        }
+      ]
+    }
+  ]
+}
