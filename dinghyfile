@@ -19,22 +19,6 @@
           "type": "wait",
           "waitTime": 15
        }
-    },
-    {
-      "application": "dinghytestapp",
-      "name": "TestingSecondPipeline",
-      "stages": [
-        {
-          "name": "Uno",
-          "type": "wait",
-          "waitTime": 20
-        },
-        {
-          "name": "Dos",
-          "type": "wait",
-          "waitTime": 15
-       }
       ]
     }
-  ]
 }
