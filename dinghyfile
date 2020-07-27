@@ -12,7 +12,7 @@
         {
           "name": "one",
           "type": "wait",
-          "waitTime": 15
+          "waitTime": 20
         },
         {
           "name": "two",
