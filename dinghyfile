@@ -2,7 +2,7 @@
   "application": "dinghytestapp",
   "spec": {
     "email":"austin.thao5@gmail.com",
-    "description":"Testing another update"
+    "description":"Trying to update the application from Dinghy"
   },
   "pipelines": [
     {
@@ -13,13 +13,8 @@
           "name": "one",
           "type": "wait",
           "waitTime": 20
-        },
-        {
-          "name": "two",
-          "type": "wait",
-          "waitTime": 15
-       }
+        }
       ]
     }
-]
+  ]
 }
