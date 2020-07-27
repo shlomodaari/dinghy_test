@@ -1,18 +1,18 @@
 {
   "application": "dinghytestapp",
   "spec": {
-    "email":"austin.thao5@gmail.com",
+    "email":"austin.thao@armory.io",
     "description":"Trying to update the application from Dinghy"
   },
   "pipelines": [
     {
       "application": "dinghytestapp",
-      "name": "changeNameofPipeline",
+      "name": "TestingDinghy",
       "stages": [
         {
           "name": "one",
           "type": "wait",
-          "waitTime": 20
+          "waitTime": 15
         }
       ]
     }
