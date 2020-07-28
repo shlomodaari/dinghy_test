@@ -4,8 +4,8 @@
         "save_app_on_update" : true
   },
   "spec": {
-    "email":"austin.thao5@gmail.com",
-    "description":"Update number 2"
+    "email":"austin.thao@armory.io",
+    "description":"Update number 3"
   },
   "pipelines": [
     {
@@ -13,7 +13,7 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "NameChange",
+          "name": "Stage 1",
           "type": "wait",
           "waitTime": 36
         }
