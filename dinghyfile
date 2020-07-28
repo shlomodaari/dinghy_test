@@ -5,7 +5,7 @@
   },
   "spec": {
     "email":"austin.thao5@gmail.com",
-    "description":"Test Application Update"
+    "description":"Test Application Update. Why didn't the webhook get sent."
   },
   "pipelines": [
     {
@@ -15,7 +15,7 @@
         {
           "name": "NameChange",
           "type": "wait",
-          "waitTime": 100
+          "waitTime": 36
         }
       ]
     }
