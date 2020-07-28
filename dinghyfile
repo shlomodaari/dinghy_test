@@ -1,11 +1,11 @@
 {
   "application": "dinghytestapp",
    "globals": {
-        "save_app_on_update" : true
+        "save_app_on_update" : false
   },
   "spec": {
     "email":"austin.thao@armory.io",
-    "description":"Update number 4"
+    "description":"Update number 5"
   },
   "pipelines": [
     {
@@ -13,7 +13,7 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "Stage Testing",
+          "name": "Stage Testing Again",
           "type": "wait",
           "waitTime": 36
         }
