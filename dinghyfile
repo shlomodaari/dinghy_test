@@ -13,7 +13,7 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "Stage Testing Again",
+          "name": "Stage Another Test",
           "type": "wait",
           "waitTime": 36
         }
