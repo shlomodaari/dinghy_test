@@ -13,9 +13,9 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "one",
+          "name": "NameChange",
           "type": "wait",
-          "waitTime": 20
+          "waitTime": 100
         }
       ]
     }
