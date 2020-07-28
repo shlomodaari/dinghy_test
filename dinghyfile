@@ -1,8 +1,11 @@
 {
   "application": "dinghytestapp",
+   "globals": {
+        "save_app_on_update" : true
+  },
   "spec": {
     "email":"austin.thao5@gmail.com",
-    "description":"Trying to update the application from Dinghy"
+    "description":"Test Application Update"
   },
   "pipelines": [
     {
