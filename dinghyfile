@@ -5,7 +5,7 @@
   },
   "spec": {
     "email":"austin.thao@armory.io",
-    "description":"Update number 3"
+    "description":"Update number 4"
   },
   "pipelines": [
     {
@@ -13,7 +13,7 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "Stage 1",
+          "name": "Stage Testing",
           "type": "wait",
           "waitTime": 36
         }
