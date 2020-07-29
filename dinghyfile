@@ -1,11 +1,11 @@
 {
   "application": "AnotherDinghyApp",
    "globals": {
-        "save_app_on_update" : true
+        "save_app_on_update" : "true"
   },
   "spec": {
-    "email":"austin.thao@armory.io",
-    "description":"Update number 7"
+    "email":"austin.thao5@gmail.com",
+    "description":"Update number 8"
   },
   "pipelines": [
     {
@@ -13,7 +13,7 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "Stage 1 Again Again",
+          "name": "Stage 1 Again Again Again",
           "type": "wait",
           "waitTime": 25
         }
