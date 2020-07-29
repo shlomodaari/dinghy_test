@@ -15,7 +15,7 @@
         {
           "name": "The First Stage",
           "type": "wait",
-          "waitTime": 36
+          "waitTime": 20
         }
       ]
     }
