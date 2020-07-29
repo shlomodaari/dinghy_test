@@ -1,7 +1,7 @@
 {
-  "application": "dinghytestapp",
+  "application": "AnotherDinghyApp",
    "globals": {
-        "save_app_on_update" : "true"
+        "save_app_on_update" : true
   },
   "spec": {
     "email":"austin.thao5@gmail.com",
@@ -9,7 +9,7 @@
   },
   "pipelines": [
     {
-      "application": "dinghytestapp",
+      "application": "AnotherDinghyApp",
       "name": "changeNameofPipeline",
       "stages": [
         {
