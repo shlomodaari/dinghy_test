@@ -13,9 +13,9 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "The Other Stage Updated",
+          "name": "Stage 1 Again",
           "type": "wait",
-          "waitTime": 20
+          "waitTime": 25
         }
       ]
     }
