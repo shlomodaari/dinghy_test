@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mosquitto-config-file
-  namespace: austin-oss
+  namespace: austin-thao
 data:
   mosquitto.conf: |
     log_dest stdout
