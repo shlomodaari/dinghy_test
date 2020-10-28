@@ -9,7 +9,8 @@
           {
             "name": "Wait Stage",
             "type": "wait",
-            "waitTime": 10
+            "waitTime": 10,
+            "refId": "1"
           }
         }
       ]
