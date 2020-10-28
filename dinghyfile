@@ -1,4 +1,3 @@
-{
   "application": "test",
   "pipelines": [
     {
@@ -16,4 +15,3 @@
       ]
     }
   ]
-}
