@@ -3,7 +3,7 @@
   "pipelines": [
     {
       "application": "test",
-      "name": "Dinghy Pipeline Test",
+      "name": "Dinghy Pipeline Test1",
       "stages": [
         {
           {
