@@ -13,9 +13,7 @@
       "name": "changeNameofPipeline",
       "stages": [
         {
-          "name": "Stage 1 Againx9",
-          "type": "wait",
-          "waitTime": 9
+          {{module "module.wait"}};
         }
       ]
     }
