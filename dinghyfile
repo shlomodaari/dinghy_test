@@ -1,17 +1,20 @@
-  "application": "test",
-  "pipelines": [
-    {
-      "application": "test",
-      "name": "Dinghy Pipeline Test1",
-      "stages": [
+{
+    "application": "test",
+    "pipelines": [
         {
-          {
-            "name": "Wait Stage",
-            "type": "wait",
-            "waitTime": 10,
-            "refId": "1"
-          }
+            "application": "test",
+            "keepWaitingPipelines": false,
+            "limitConcurrent": true,
+            "name": "Dinghy Pipeline",
+            "stages": [
+                {
+                    "name": "Wait",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "wait",
+                    "waitTime": 20
+                }
+            ],
+            "triggers": []
         }
-      ]
-    }
-  ]
+    ]
