@@ -6,7 +6,11 @@
       "name": "Dinghy Pipeline Test",
       "stages": [
         {
-          {{module "module.wait"}};
+          {
+            "name": "Wait Stage",
+            "type": "wait",
+            "waitTime": 10
+          }
         }
       ]
     }
