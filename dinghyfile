@@ -1,16 +1,9 @@
 {
-  "application": "AnotherDinghyApp",
-   "globals": {
-        "save_app_on_update" : true
-  },
-  "spec": {
-    "email":"austinthao9@armory.io",
-    "description":"Update number 9"
-  },
+  "application": "test",
   "pipelines": [
     {
-      "application": "AnotherDinghyApp",
-      "name": "changeNameofPipeline",
+      "application": "test",
+      "name": "Dinghy Pipeline",
       "stages": [
         {
           {{module "module.wait"}};
