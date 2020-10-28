@@ -1,5 +1,0 @@
-{
-  "name": "Wait Stage", # Name of the stage
-  "type": "wait", # Type of the stage
-  "waitTime": 10 # Setting the waitTime field in the stage
-}
