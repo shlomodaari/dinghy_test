@@ -1,6 +1,15 @@
 {
   "application": "test",
   "pipelines": [
-    {{ module "simple.pipeline.module" "application" "test" }}
+    {
+      "application": "test",
+      "keepWaitingPipelines": false,
+      "limitConcurrent": true,
+      "name": "Dinghy Pipeline",
+      "stages": [
+        {{ module "wait.stage.module" "waitTime" 200 }}
+      ],
+      "triggers": []
+    }
   ]
 }
