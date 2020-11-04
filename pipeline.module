@@ -4,7 +4,7 @@
   "limitConcurrent": true,
   "name": "Dinghy Pipeline",
   "stages": [
-    {{ module "wait.module" "waitTime" 200 }},
+    {{ module "wait.module" "refId" "1"}},
   ],
   "triggers": []
 }
