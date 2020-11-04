@@ -1,1 +1,7 @@
-test
+{
+  "name": "Wait",
+  "refId": "1",
+  "requisiteStageRefIds": [],
+  "type": "wait",
+  "waitTime": 25
+}
