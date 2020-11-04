@@ -8,7 +8,11 @@
             "name": "Dinghy Pipeline",
             "stages": [
                 {
-                    
+                    "name": "UPDATED STAGE",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "wait",
+                    "waitTime": 30
                 }
             ],
             "triggers": []
