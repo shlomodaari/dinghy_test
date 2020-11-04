@@ -1,21 +1,6 @@
 {
-    "application": "test",
+    "application": "teset",
     "pipelines": [
-        {
-            "application": "test",
-            "keepWaitingPipelines": false,
-            "limitConcurrent": true,
-            "name": "Dinghy Pipeline",
-            "stages": [
-                {
-                    "name": "UPDATED STAGE",
-                    "refId": "1",
-                    "requisiteStageRefIds": [],
-                    "type": "wait",
-                    "waitTime": 30
-                }
-            ],
-            "triggers": []
-        }
+      {{ module "pipeline.module"}}
     ]
 }
