@@ -1,0 +1,11 @@
+{
+  "application": "{{ var "application" ?: "yourspinnakerapplicationname" }}",
+  "keepWaitingPipelines": false,
+  "limitConcurrent": true,
+  "name": "Made By Armory Pipeline Templates",
+  "stages": [
+    {{ module "wait.stage.module" "waitTime" 200 }},
+    {{ module "deploy.stage.module" "requisiteStageRefIds" ["1"] }}
+  ],
+  "triggers": []
+}
