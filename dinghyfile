@@ -10,7 +10,7 @@
                 {
                     "name": "Wait",
                     "refId": "1",
-                    "requisiteStageRefIds": [],
+                    "requisiteStageRefIds": ["2"],
                     "type": "wait",
                     "waitTime": 25
                 },
