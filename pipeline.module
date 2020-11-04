@@ -1,0 +1,10 @@
+{
+  "application": "test",
+  "keepWaitingPipelines": false,
+  "limitConcurrent": true,
+  "name": "Dinghy Pipeline",
+  "stages": [
+    {{ module "wait.module" "waitTime" 200 }},
+  ],
+  "triggers": []
+}
