@@ -8,7 +8,7 @@
             "name": "Dinghy Pipeline",
             "stages": [
                 {
-                    "name": "Test Update",
+                    "name": "Test Update Stage",
                     "refId": "1",
                     "requisiteStageRefIds": [],
                     "type": "wait",
