@@ -1,15 +1,6 @@
 {
-    "application": "test",
-    "pipelines": [
-        {
-            "application": "test",
-            "keepWaitingPipelines": false,
-            "limitConcurrent": true,
-            "name": "Dinghy Pipeline",
-            "stages": [
-              {{ module "wait.module" }}
-            ],
-            "triggers": []
-        }
-    ]
+  "application": "test",
+  "pipelines": [
+    {{ module "simple.pipeline.module" "application" "test" }}
+  ]
 }
