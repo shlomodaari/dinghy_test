@@ -9,6 +9,9 @@
             "stages": [
                 {
                     module.wait
+                },
+                {
+                    module.wait
                 }
             ],
             "triggers": []
