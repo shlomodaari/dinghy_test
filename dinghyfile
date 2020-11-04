@@ -10,9 +10,25 @@
                 {
                     "name": "Wait",
                     "refId": "1",
-                    "requisiteStageRefIds": [],
+                    "requisiteStageRefIds": ["2"],
                     "type": "wait",
                     "waitTime": 25
+                },
+                {
+                    "failPipeline": true,
+                    "isNew": true,
+                    "judgmentInputs": [
+                        {
+                            "value": "yes"
+                        }
+                    ],
+                    "name": "Manual Judgment",
+                    "notifications": [],
+                    "refId": "2",
+                    "requisiteStageRefIds": [
+                        "1"
+                    ],
+                    "type": "manualJudgment"
                 }
             ],
             "triggers": []
