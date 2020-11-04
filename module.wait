@@ -1,7 +1,5 @@
 {
-  "name": "Wait",
-  "refId": "1",
-  "requisiteStageRefIds": [],
+  "name": "Wait Module",
   "type": "wait",
-  "waitTime": 25
+  "waitTime": 30
 }
