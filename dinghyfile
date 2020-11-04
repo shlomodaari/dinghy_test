@@ -8,7 +8,11 @@
             "name": "Dinghy Pipeline",
             "stages": [
                 {
-                    {module.wait}
+                    "name": "Wait",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "wait",
+                    "waitTime": 25
                 }
             ],
             "triggers": []
