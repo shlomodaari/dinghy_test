@@ -15,16 +15,11 @@
                     "waitTime": 25
                 },
                 {
-                    "judgmentInputs": [
-                        {
-                            "value": "yes"
-                        }
-                    ],
-                    "name": "Manual Judgment",
-                    "notifications": [],
+                    "name": "Test Stage",
                     "refId": "2",
                     "requisiteStageRefIds": [],
-                    "type": "manualJudgment"
+                    "type": "wait",
+                    "waitTime": 25
                 }
             ],
             "triggers": []
