@@ -1,5 +1,5 @@
 {
-  "name": "{{ var "name" ?: "defaultname" }}",
+  "name": "{{ var "name" ?: "Wait Stage Update Test" }}",
   "refId": "1",
   "requisiteStageRefIds": [],
   "type": "wait",
