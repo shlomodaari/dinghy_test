@@ -10,17 +10,10 @@
                 {
                     "name": "Wait",
                     "refId": "1",
-                    "requisiteStageRefIds": ["2"],
-                    "type": "wait",
-                    "waitTime": 25
-                },
-                {
-                    "name": "Test Update Stage",
-                    "refId": "2",
                     "requisiteStageRefIds": [],
                     "type": "wait",
-                    "waitTime": 30
-                }                
+                    "waitTime": 25
+                }
             ],
             "triggers": []
         }
