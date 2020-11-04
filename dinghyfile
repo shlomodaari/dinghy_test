@@ -15,8 +15,6 @@
                     "waitTime": 25
                 },
                 {
-                    "failPipeline": true,
-                    "isNew": true,
                     "judgmentInputs": [
                         {
                             "value": "yes"
@@ -25,9 +23,7 @@
                     "name": "Manual Judgment",
                     "notifications": [],
                     "refId": "2",
-                    "requisiteStageRefIds": [
-                        "1"
-                    ],
+                    "requisiteStageRefIds": [],
                     "type": "manualJudgment"
                 }
             ],
