@@ -8,18 +8,7 @@
             "name": "Dinghy Pipeline",
             "stages": [
                 {
-                    "name": "Dinghy Updated Wait",
-                    "refId": "1",
-                    "requisiteStageRefIds": ["2"],
-                    "type": "wait",
-                    "waitTime": 25
-                },
-                {
-                    "name": "Test Stage",
-                    "refId": "2",
-                    "requisiteStageRefIds": [],
-                    "type": "wait",
-                    "waitTime": 25
+                    module.wait
                 }
             ],
             "triggers": []
