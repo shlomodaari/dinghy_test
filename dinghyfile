@@ -8,7 +8,14 @@
       "name": "Dinghy Pipeline",
       "stages": [
         {{ module "wait.stage.module" "waitTime" 40 }},
-        {{ module "wait.stage.module" "waitTime" 40 }}
+        {
+            "clusters": [],
+             "isNew": true,
+             "name": "deploy to stage",
+             "refId": "104",
+             "requisiteStageRefIds": "2",
+              "type": "deploy"
+        }
       ],
       "triggers": []
     }
