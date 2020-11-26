@@ -6,7 +6,6 @@
       "name": "Wait Pipeline",
       "isNew": true,
       "keepWaitingPipelines": false,
-      "lastModifiedBy": "justin@acompany.com",
       "limitConcurrent": true,
       "stages": [
         {
