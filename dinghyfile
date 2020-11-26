@@ -1,15 +1,22 @@
 {
-  "application": "test",
-  "pipelines": [
-    {
-      "application": "test",
-      "keepWaitingPipelines": false,
-      "limitConcurrent": true,
-      "name": "Dinghy Pipeline",
-      "stages": [
-        {{ module "wait.stage.module" "waitTime" 25 }},
-      ],
-      "triggers": []
-    }
-  ]
+    "application": "test",
+    "pipelines": [
+        {
+            "application": "test",
+            "keepWaitingPipelines": false,
+            "limitConcurrent": true,
+            "name": "Dinghy Pipeline",
+            "stages": [
+                {
+                    "isNew": true,
+                    "name": "Wait",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "wait",
+                    "waitTime": 30
+                }
+            ],
+            "triggers": []
+        }
+    ]
 }
