@@ -6,13 +6,13 @@
       "name": "Wait Pipeline",
       "isNew": true,
       "keepWaitingPipelines": false,
-      "limitConcurrent": NANI,
+      "limitConcurrent": true,
       "stages": [
         {
           "isNew": true,
           "name": "Wait",
           "refId": "1",
-          "requisiteStageRefIds": [],
+          "requisiteStageRefIds": [], Let's add something random here
           "type": "wait",
           "waitTime": 30
         }
