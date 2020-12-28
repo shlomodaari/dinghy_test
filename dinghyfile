@@ -6,7 +6,7 @@
       "name": "Wait Pipeline",
       "isNew": true,
       "keepWaitingPipelines": false,
-      "limitConcurrentSOMETHINGHERE": true,
+      "limitConcurrent": NANI,
       "stages": [
         {
           "isNew": true,
