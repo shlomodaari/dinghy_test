@@ -5,8 +5,8 @@
       "application": "helloworld",
       "name": "Wait Pipeline",
       "isNew": true,
-      "keepWaitingPipeliwfwfwnes": false,
-      "limitConcurrent": true,
+      "keepWaitingPipelines": false,
+      "limitConcurrentSOMETHINGHERE": true,
       "stages": [
         {
           "isNew": true,
