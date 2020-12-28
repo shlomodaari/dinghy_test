@@ -5,7 +5,7 @@
       "application": "helloworld",
       "name": "Wait Pipeline",
       "isNew": true,
-      "keepWaitingPipeliwfwfwnes": false,
+      "keepWaitingPipelines": false,
       "limitConcurrent": true,
       "stages": [
         {
