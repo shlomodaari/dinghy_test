@@ -1,4 +1,5 @@
 {
+awofhwoafpawjfpwajfpwjafpoawjpfajwpfwjapfjw "APFELIEJFSF", "FSJOFIEJOSJF:SF"
   "application": "helloworld",
   "pipelines": [
     {
@@ -12,7 +13,7 @@
           "isNew": true,
           "name": "Wait",
           "refId": "1",
-          "requisiteStageRefIds": [], Let's add something random here
+          "requisiteStageRefIds": [],
           "type": "wait",
           "waitTime": 30
         }
