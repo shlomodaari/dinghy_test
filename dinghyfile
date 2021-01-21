@@ -5,8 +5,8 @@
       "application": "helloworld",
       "name": "Wait Pipeline Test",
       "isNew": true,
-      "keepWaitingPipelines": fasle,
-      "limitConcurrent": true,
+      "keepWaitingPipelines": false,
+      "limitConcurrent": false, TESTING HERE
       "stages": [
         {
           "isNew": true,
