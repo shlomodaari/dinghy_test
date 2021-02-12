@@ -3,10 +3,10 @@
   "pipelines": [
     {
       "application": "helloworld",
-      "name": "Wait Pipeline Test",
+      "name": "Wait Pipeline Test Repo Test",
       "isNew": true,
       "keepWaitingPipelines": false,
-      "limitConcurrent": false, wcojrowjcoiwjowjw
+      "limitConcurrent": false,
       "stages": [
         {
           "isNew": true,
