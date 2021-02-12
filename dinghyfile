@@ -6,15 +6,10 @@
       "name": "Wait Pipeline Test",
       "isNew": true,
       "keepWaitingPipelines": false,
-      "limitConcurrent": false, owfowfojwijfowjfowsfsfs
+      "limitConcurrent": false,
       "stages": [
         {
-          "isNew": true,
-          "name": "Wait",
-          "refId": "1",
-          "requisiteStageRefIds": [],
-          "type": "wait",
-          "waitTime": 10
+          {{ module "wait.stage.module" "waitTime" 40 }}
         }
       ],
       "triggers": []
