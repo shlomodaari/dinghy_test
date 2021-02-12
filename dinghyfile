@@ -8,9 +8,7 @@
       "keepWaitingPipelines": false,
       "limitConcurrent": false,
       "stages": [
-        {
           {{ module "wait.stage.module" "waitTime" 23 }}
-        }
       ],
       "triggers": []
     }
