@@ -6,7 +6,7 @@
       "name": "Wait Pipeline Test",
       "isNew": true,
       "keepWaitingPipelines": false,
-      "limitConcurrent": false, Doing something with Pull Requrest....
+      "limitConcurrent": false,
       "stages": [
         {
           "isNew": true,
@@ -14,7 +14,7 @@
           "refId": "1",
           "requisiteStageRefIds": [],
           "type": "wait",
-          "waitTime": 30
+          "waitTime": 45
         }
       ],
       "triggers": []
