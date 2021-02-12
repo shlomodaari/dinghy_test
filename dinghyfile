@@ -14,7 +14,7 @@
           "refId": "1",
           "requisiteStageRefIds": [],
           "type": "wait",
-          "waitTime": 45
+          "waitTime": 60
         }
       ],
       "triggers": []
