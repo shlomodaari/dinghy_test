@@ -9,7 +9,7 @@
       "limitConcurrent": false,
       "stages": [
         {
-          {{ module "wait.stage.module" "waitTime" 10 }}
+          {{ module "wait.stage.module" "waitTime" 20 }}
         }
       ],
       "triggers": []
