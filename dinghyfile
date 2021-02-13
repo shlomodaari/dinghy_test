@@ -8,14 +8,13 @@
       "keepWaitingPipelines": false,
       "limitConcurrent": false,
       "stages": [
-        {
-          "isNew": true,
-          "name": "Wait",
-          "refId": "1",
-          "requisiteStageRefIds": [],
-          "type": "wait",
-          "waitTime": 60
-        }
+          {{ module "deploy/v0.2.0/stage/deploy-dev-no-test"
+          "svc-name" "svc-spinnaker-demo"
+          "app-prefix" "bo-"
+          "helm-chart-type" "cronjob"
+          "helm-chart-version" "0.1.2"
+          "finalRefId" "dev-to-stage"
+        }}
       ],
       "triggers": []
     }
