@@ -1,0 +1,86 @@
+{
+  "completeOtherBranchesThenFail": false,
+  "continuePipeline": false,
+  "failPipeline": true,
+  "name": "bake dev",
+  "namespace": "default",
+  "outputName": "{{ var "svc-name" ?: "svc-example" }}-dev",
+  "overrides": {},
+  "refId": "{{ var "svc-name" ?: "svc-example" }}-bakedev",
+  "requisiteStageRefIds": [
+    "{{ var "requisiteStageRefId" ?: "docker-vars" }}"
+  ],
+  "templateRenderer": "HELM2",
+  "type": "bakeManifest",
+  "expectedArtifacts": [{
+    "defaultArtifact": {
+      "customKind": true,
+      "id": "expected-default-artifact-{{ var "svc-name" ?: "svc-example" }}-dev"
+    },
+    "displayName": "{{ var "svc-name" ?: "svc-example" }}-dev",
+    "id": "expected-artifact-{{ var "svc-name" ?: "svc-example" }}-dev",
+    "matchArtifact": {
+      "artifactAccount": "embedded-artifact",
+      "id": "expected-match-artifact-{{ var "svc-name" ?: "svc-example" }}-dev",
+      "name": "{{ var "svc-name" ?: "svc-example" }}-dev",
+      "type": "embedded/base64"
+    },
+    "useDefaultArtifact": false,
+    "usePriorArtifact": false
+  }],
+  "inputArtifacts": [{
+      "account": "earnin-dev-s3",
+      "artifact": {
+        "artifactAccount": "earnin-dev-s3",
+        "id": "input-s3-base-artifact-{{ var "svc-name" ?: "svc-example" }}-dev",
+        "reference": "s3://earnin-dev-devops-eks-spinnaker-deployment/helm/{{ var "helm-chart-type" ?: "base" }}/packages/{{ var "helm-chart-type" ?: "base" }}-{{ var "helm-chart-version" ?: "0.1.0" }}.tgz",
+        "type": "s3/object"
+      }
+    },
+    {
+      "account": "earnin-dev-s3",
+      "artifact": {
+        "artifactAccount": "earnin-dev-s3",
+        "id": "input-s3-values-artifact-{{ var "svc-name" ?: "svc-example" }}-dev",
+        "reference": "s3://earnin-dev-devops-eks-spinnaker-deployment/helm/{{ var "helm-chart-type" ?: "base" }}/packagevalues/values-{{ var "helm-chart-version" ?: "0.1.0" }}.yaml",
+        "type": "s3/object"
+      }
+    },
+    {
+      "account": "earnin-dev-s3",
+      "artifact": {
+        "artifactAccount": "earnin-dev-s3",
+        "id": "input-s3-env-values-artifact-{{ var "svc-name" ?: "svc-example" }}-dev",
+        "reference": "s3://earnin-dev-devops-eks-spinnaker-deployment/helm/{{ var "svc-name" ?: "svc-example" }}/packagevalues/${image_tag}/{{ var "app-prefix" ?: "" }}dev-values.yaml",
+        "type": "s3/object"
+      }
+    }
+  ]
+},
+{
+  "account": "dev-cluster",
+  "cloudProvider": "kubernetes",
+  "completeOtherBranchesThenFail": false,
+  "continuePipeline": false,
+  "failPipeline": true,
+  "manifestArtifactId": "expected-artifact-{{ var "svc-name" ?: "svc-example" }}-dev",
+  "moniker": {
+    "app": "{{ var "svc-name" ?: "svc-example" }}"
+  },
+  "name": "deploy dev",
+  "refId": "{{ var "finalRefId" ?: "finalRefId" }}",
+  "requisiteStageRefIds": [
+    "{{ var "svc-name" ?: "svc-example" }}-bakedev"
+  ],
+  "skipExpressionEvaluation": false,
+  "source": "artifact",
+  "stageTimeoutMs": {{ var "deploy-stage-timeout-ms" ?: "600000" }},
+  "trafficManagement": {
+    "enabled": false,
+    "options": {
+      "enableTraffic": false,
+      "services": []
+    }
+  },
+  "type": "deployManifest"
+}
