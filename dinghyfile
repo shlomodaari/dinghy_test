@@ -8,7 +8,7 @@
       "keepWaitingPipelines": false,
       "limitConcurrent": false,
       "stages": [
-          {{ module "deploy/v0.2.0/stage/deploy-dev-no-test"
+          {{ local_module "deploy/v0.2.0/stage/deploy-dev-no-test"
           "svc-name" "svc-spinnaker-demo"
           "app-prefix" "bo-"
           "helm-chart-type" "cronjob"
