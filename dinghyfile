@@ -3,7 +3,6 @@
     "globals": {
         "save_app_on_update" : true
     },
-    "spec": {},
     "pipelines": [
         {
           "application": "test",
