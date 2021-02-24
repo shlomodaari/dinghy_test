@@ -1,34 +1,38 @@
 {
-  "application": "test",
-  "spec": {
-      "notifications": {
-          "slack": [
-              {
-                  "when": [ "pipeline.complete" ],
-                  "address": "temp-support"
-              },
-              {
-                  "when": [ "pipeline.failed"],
-                  "address": "temp-support"
-              }
-          ]
-      }
-  }  
-  "pipelines": [
-    {
-      "application": "test",
-      "name": "Wait Pipeline Test 3",
-      "isNew": true,
-      "keepWaitingPipelines": false,
-      "limitConcurrent": false,
-      "stages": [
-        {
-          "name": "one",
-          "type": "wait",
-          "waitTime": 10
-        }  
-      ],
-      "triggers": []
+    "application": "test",
+    "globals": {
+        "save_app_on_update" : true
+    },
+    "spec": {
+        "notifications": {
+            "slack": [
+                {
+                    "when": [ "pipeline.complete" ],
+                    "address": "temp-support"
+                },
+                {
+                    "when": [ "pipeline.failed"],
+                    "address": "temp-support"
+                }
+            ]
+        }
     }
-   ]
+
+    "pipelines": [
+        {
+          "application": "test",
+          "name": "Wait Pipeline Test 3",
+          "isNew": true,
+          "keepWaitingPipelines": false,
+          "limitConcurrent": false,
+          "stages": [
+            {
+              "name": "one",
+              "type": "wait",
+              "waitTime": 10
+            }  
+          ],
+          "triggers": []
+        }
+       ]
 }
