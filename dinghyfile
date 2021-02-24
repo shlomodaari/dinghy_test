@@ -1,8 +1,5 @@
 {
     "application": "test",
-    "globals": {
-        "save_app_on_update" : true
-    },
     "pipelines": [
         {
           "application": "test",
