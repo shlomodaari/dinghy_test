@@ -1,19 +1,19 @@
 {
   "application": "test",
-    "spec": {
-        "notifications": {
-            "slack": [
-                {
-                    "when": [ "pipeline.complete" ],
-                    "address": "temp-support"
-                },
-                {
-                    "when": [ "pipeline.failed"],
-                    "address": "temp-support"
-                }
-            ]
-        }
-    }  
+  "spec": {
+      "notifications": {
+          "slack": [
+              {
+                  "when": [ "pipeline.complete" ],
+                  "address": "temp-support"
+              },
+              {
+                  "when": [ "pipeline.failed"],
+                  "address": "temp-support"
+              }
+          ]
+      }
+  }  
   "pipelines": [
     {
       "application": "test",
