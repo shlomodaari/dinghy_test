@@ -1,16 +1,23 @@
 {
-  "application": "helloworld",
-  "pipelines": [
-    {
-      "application": "helloworld",
-      "name": "Wait Pipeline Test Repo Test5",
-      "isNew": true,
-      "keepWaitingPipelines": false,
-      "limitConcurrent": false,
-      "stages": [
-          {{ local_module "deploy/v0.2.0/stage/stage.minimal.wait.localmodule" }}
-      ],
-      "triggers": []
-    }
-   ]
+    "application": "test",
+    "globals": {
+        "save_app_on_update" : true
+    },
+    "pipelines": [
+        {
+          "application": "test",
+          "name": "Wait Pipeline Test 3",
+          "isNew": true,
+          "keepWaitingPipelines": false,
+          "limitConcurrent": false,
+          "stages": [
+            {
+              "name": "one",
+              "type": "wait",
+              "waitTime": 10
+            }  
+          ],
+          "triggers": []
+        }
+       ]
 }
