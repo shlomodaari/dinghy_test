@@ -21,7 +21,7 @@
     "pipelines": [
         {
           "application": "test",
-          "name": "Wait Pipeline Test 5",
+          "name": "Wait Pipeline Test 10",
           "isNew": true,
           "keepWaitingPipelines": false,
           "limitConcurrent": false,
