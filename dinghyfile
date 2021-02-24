@@ -1,20 +1,32 @@
 {
-  "application": "helloworld",
+  "application": "test",
+    "spec": {
+        "notifications": {
+            "slack": [
+                {
+                    "when": [ "pipeline.complete" ],
+                    "address": "temp-support"
+                },
+                {
+                    "when": [ "pipeline.failed"],
+                    "address": "temp-support"
+                }
+            ]
+        }
+    }  
   "pipelines": [
     {
-      "application": "helloworld",
+      "application": "test",
       "name": "Wait Pipeline Test 3",
       "isNew": true,
       "keepWaitingPipelines": false,
       "limitConcurrent": false,
       "stages": [
-       {{ module "deploy/v0.2.0/stage/deploy-dev-no-test"
-          "svc-name" "svc-spinnaker-demo"
-          "app-prefix" "bo-"
-          "helm-chart-type" "cronjob"
-          "helm-chart-version" "0.1.2"
-          "finalRefId" "dev-to-stage"
-        }}
+        {
+          "name": "one",
+          "type": "wait",
+          "waitTime": 10
+        }  
       ],
       "triggers": []
     }
