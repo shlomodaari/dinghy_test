@@ -1,23 +1,10 @@
 {
     "application": "test",
-    "globals": {
-        "save_app_on_update" : true
+    "appmetadata": {
+      "dataSources": {
+        "CanaryConfigs": true
+      }
     },
-    "spec": {
-        "notifications": {
-            "slack": [
-                {
-                    "when": [ "pipeline.complete" ],
-                    "address": "#temp-support"
-                },
-                {
-                    "when": [ "pipeline.failed"],
-                    "address": "#temp-support"
-                }
-            ]
-        }
-    },
-
     "pipelines": [
         {
           "application": "test",
