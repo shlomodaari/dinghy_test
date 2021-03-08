@@ -1,7 +1,9 @@
 {
     "application": "test",
-    "globals": {
-        "save_app_on_update" : true
+    "appmetadata": {
+      "dataSources": {
+        "CanaryConfigs": true
+      }
     },
     "pipelines": [
         {
