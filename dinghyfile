@@ -12,7 +12,7 @@
           "limitConcurrent": false,
           "stages": [
             {
-              "name": "TEST2",
+              "name": "TEST3",
               "type": "wait",
               "waitTime": 10
             }  
