@@ -1,7 +1,9 @@
 {
     "application": "test",
     "appmetadata": {
-      "canaryConfigs": "true"
+        "dataSources": {
+            "enabled": ["canaryConfigs"]
+        }
     },
     "pipelines": [
         {
@@ -12,7 +14,7 @@
           "limitConcurrent": false,
           "stages": [
             {
-              "name": "TEST5",
+              "name": "TEST6",
               "type": "wait",
               "waitTime": 10
             }  
