@@ -1,13 +1,7 @@
 {
     "application": "test",
-    "appmetadata": {
-      "dataSources": {
-        "CanaryConfigs": true
-      }
-    },
     "pipelines": [
         {
-          "application": "test",
           "name": "Wait Pipeline Test 3",
           "isNew": true,
           "keepWaitingPipelines": false,
