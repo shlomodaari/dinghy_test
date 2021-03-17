@@ -12,7 +12,9 @@
               "name": "TEST7",
               "type": "wait",
               "waitTime": 10
-            }  
+            },
+            
+            {{ module "wait.stage.module" "waitTime" 20 "name" "Gowri Training Test"}}
           ],
           "triggers": []
         }
