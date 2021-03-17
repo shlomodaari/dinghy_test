@@ -14,7 +14,7 @@
               "waitTime": 10
             },
             
-            {{ module "wait.stage.module" "waitTime" 20 "name" "Gowri Training Test"}}
+            {{ module "wait.stage.module" "waitTime" 21 "name" "Gowri Training Test"}}
           ],
           "triggers": []
         }
