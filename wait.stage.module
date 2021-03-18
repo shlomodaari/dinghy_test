@@ -1,6 +1,6 @@
 
 {
-    "name": "{{ var "name" ?: "defaultname" }}",
+    "name": "{{ var "name" ?: "Test name" }}",
     "refId": "1",
     "requisiteStageRefIds": [],
     "type": "wait",
