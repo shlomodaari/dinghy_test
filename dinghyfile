@@ -8,7 +8,7 @@
           "keepWaitingPipelines": false,
           "limitConcurrent": false,
           "stages": [
-          {{ module "local.stage" }}
+          {{ local_module "local.stage" }}
           ]
         }
     ]
