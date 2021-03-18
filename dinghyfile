@@ -8,9 +8,7 @@
           "keepWaitingPipelines": false,
           "limitConcurrent": false,
           "stages": [
-          {{ local_module "stage.minimal.wait.localmodule" }},
-          {{ local_module "stage.minimal.wait.localmodule" "waitname" "localmodule overwrite-name" "waitTime" "100" }},
-          {{ module "stage.minimal.wait.module" "waitname" "global module overwrite-name" "waitTime" "100" }}
+          {{ local_module "local.stage" }}
           ]
         }
     ]
