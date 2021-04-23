@@ -1,0 +1,22 @@
+apiVersion: spinnaker.armory.io/v1alpha2
+kind: SpinnakerService
+metadata:
+  name: spinnaker
+  namespace: austin-oss
+spec:
+  spinnakerConfig:
+    config: {}
+    profiles: {}
+    files: {}
+    service-settings: {}
+  validation:
+    providers:
+      kubernetes:
+        enabled: true
+  expose:
+    type: service
+    service:
+      type: LoadBalancer
+      annotations:
+        service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+      overrides: {}
