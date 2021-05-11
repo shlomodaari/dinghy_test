@@ -1,5 +1,18 @@
 {
     "application": "test",
+    
+   "spec":{
+      "appmetadata":{
+         "dataSources":{
+            "enabled":[
+               "canaryConfigs",
+               "serverGroups"
+            ],
+            "disabled":[]
+         }
+      }
+   },
+   
     "pipelines": [
         {
           "name": "Wait Pipeline Test 3",
