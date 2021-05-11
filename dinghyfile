@@ -1,6 +1,9 @@
 {
-    "application": "test",
-    "spec":{
+   "application":"test",
+   "globals":{
+      "save_app_on_update":true
+   },
+   "spec":{
       "appmetadata":{
          "dataSources":{
             "enabled":[
@@ -10,19 +13,22 @@
             "disabled":[]
          }
       }
-    },
-    "pipelines": [
-        {
-          "application": "test",
-          "name": "Wait Pipeline Test 3001",
-          "isNew": true,
-          "keepWaitingPipelines": false,
-          "limitConcurrent": false,
-          "stages": [
-              "name": "one",
-              "type": "wait",
-              "waitTime": 10
-          ]
-        }
-    ]
+   },
+   "pipelines":[
+      {
+         "application":"test",
+         "name":"Wait Pipeline Test 3001",
+         "isNew":true,
+         "keepWaitingPipelines":false,
+         "limitConcurrent":false,
+         "stages":[
+            {
+               "name":"two",
+               "type":"wait",
+               "waitTime":10
+            }
+         ],
+         "triggers":[]
+      }
+   ]
 }
