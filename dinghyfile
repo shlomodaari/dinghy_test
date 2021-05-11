@@ -19,7 +19,9 @@
           "keepWaitingPipelines": false,
           "limitConcurrent": false,
           "stages": [
-          {{ local_module "local.stage" }}
+              "name": "one",
+              "type": "wait",
+              "waitTime": 10
           ]
         }
     ]
