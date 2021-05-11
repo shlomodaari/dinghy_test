@@ -1,5 +1,16 @@
 {
     "application": "test",
+    "spec":{
+      "appmetadata":{
+         "dataSources":{
+            "enabled":[
+               "canaryConfigs",
+               "serverGroups"
+            ],
+            "disabled":[]
+         }
+      }
+    },
     "pipelines": [
         {
           "application": "test",
