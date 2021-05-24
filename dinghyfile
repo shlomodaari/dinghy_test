@@ -4,14 +4,14 @@
       "save_app_on_update":true
    },
    "spec":{
-      "appmetadata":{
-         "dataSources":{
-            "enabled":[
-               "canaryConfigs",
-               "serverGroups"
-            ],
-            "disabled":[]
-         }
+      "dataSources":{
+         "enabled":[
+            "canaryConfigs",
+            "serverGroups"
+         ],
+         "disabled":[
+            
+         ]
       }
    },
    "pipelines":[
@@ -25,10 +25,12 @@
             {
                "name":"two",
                "type":"wait",
-               "waitTime":10
+               "waitTime":20
             }
          ],
-         "triggers":[]
+         "triggers":[
+            
+         ]
       }
    ]
 }
