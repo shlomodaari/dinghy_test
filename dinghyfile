@@ -7,10 +7,11 @@
       "appmetadata":{
          "dataSources":{
             "enabled":[
-               "canaryConfigs",
-               "serverGroups"
+               "canaryConfigs"
             ],
-            "disabled":[]
+            "disabled":[
+               "serverGroups"
+            ]
          }
       }
    },
