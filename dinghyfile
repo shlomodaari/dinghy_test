@@ -25,7 +25,7 @@
             {
                "name":"two",
                "type":"wait",
-               "waitTime":13
+               "waitTime":20
             }
          ],
          "triggers":[]
