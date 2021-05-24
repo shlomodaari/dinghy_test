@@ -7,11 +7,10 @@
       "appmetadata":{
          "dataSources":{
             "enabled":[
-               "canaryConfigs"
-            ],
-            "disabled":[
+               "canaryConfigs",
                "serverGroups"
-            ]
+            ],
+            "disabled":[]
          }
       }
    },
@@ -26,7 +25,7 @@
             {
                "name":"two",
                "type":"wait",
-               "waitTime":11
+               "waitTime":12
             }
          ],
          "triggers":[]
