@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "Dinghy Test Pipeline Again",
+            "name": "",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
@@ -14,21 +14,15 @@
                     "hasOptions": false,
                     "label": "Param1",
                     "name": "Param1",
+                    "options": [{
+                        "value": ""
+                    }],
                     "pinned": false,
                     "required": false
                 }],
-                "stages": [{
-                    "failOnFailedExpressions": true,
-                    "isNew": true,
-                    "name": "Evaluate Variables",
-                    "refId": "1",
-                    "requisiteStageRefIds": [],
-                    "type": "evaluateVariables",
-                    "variables": [{
-                        "key": "Var1",
-                        "value": "test"
-                    }]
-                }],
+                "stages": [
+                    {{ module "wait.stage.module" "waitTime" 200 }} 
+                ],
                 "triggers": [
 
                 ]
