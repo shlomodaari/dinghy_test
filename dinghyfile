@@ -1,22 +1,12 @@
 {
     "application": "test",
-    "spec": {
-        "appmetadata": {
-            "dataSources": {
-                "enabled": [
-                    "canaryConfigs",
-                    "serverGroups"
-                ],
-                "disabled": []
-            }
-        }
-    },
     "pipelines": [
         {
-            "name": "Dinghy Pipeline Push?",
+            "application": "test",
+            "name": "SpelEvaluator Dinghy Pipeline Test",
+            "isNew": true,
             "keepWaitingPipelines": false,
-            "lastModifiedBy": "austin",
-            "limitConcurrent": true,
+            "limitConcurrent": false,
             "parameterConfig": [
                 {
                     "default": "1",
@@ -24,33 +14,27 @@
                     "hasOptions": false,
                     "label": "Param1",
                     "name": "Param1",
-                    "options": [
-                        {
-                            "value": ""
-                        }
-                    ],
+                    "options": [{
+                        "value": "1"
+                    }],
                     "pinned": false,
                     "required": false
-                }
-            ],
-            "spelEvaluator": "v4",
-            "stages": [
-                {
+                }]
+                "stages": [{
                     "failOnFailedExpressions": true,
                     "isNew": true,
                     "name": "Evaluate Variables",
                     "refId": "1",
                     "requisiteStageRefIds": [],
                     "type": "evaluateVariables",
-                    "variables": [
-                        {
-                            "key": "Var1",
-                            "value": "test"
-                        }
-                    ]
-                }
-            ],
-            "triggers": []
-        }
-    ]
+                    "variables": [{
+                        "key": "Var1",
+                        "value": "test"
+                    }]
+                }],
+                "triggers": [
+
+                ]
+            }
+        ]
 }
