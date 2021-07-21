@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "SpelEvaluator Dinghy Pipeline Test",
+            "name": "Dinghy Test Pipeline Again",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
@@ -14,12 +14,9 @@
                     "hasOptions": false,
                     "label": "Param1",
                     "name": "Param1",
-                    "options": [{
-                        "value": "1"
-                    }],
                     "pinned": false,
                     "required": false
-                }]
+                }],
                 "stages": [{
                     "failOnFailedExpressions": true,
                     "isNew": true,
