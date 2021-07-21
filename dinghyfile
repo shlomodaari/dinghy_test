@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "white Space Testing Problems",
+            "name": "Module Variable Example",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
@@ -21,7 +21,7 @@
                     "required": false
                 }],
                 "stages": [
-                    {{ module "wait.stage.module" "waitTime" 200 }} 
+                    {{ module "wait.stage.module"}} 
                 ],
                 "triggers": [
 
