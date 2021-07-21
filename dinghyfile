@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "",
+            "name": "white Space Testing Problems",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
