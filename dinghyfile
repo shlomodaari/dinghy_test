@@ -1,32 +1,56 @@
 {
     "application": "test",
-    
-   "spec":{
-      "appmetadata":{
-         "dataSources":{
-            "enabled":[
-               "canaryConfigs",
-               "serverGroups"
-            ],
-            "disabled":[]
-         }
-      }
-   },
-   
+    "spec": {
+        "appmetadata": {
+            "dataSources": {
+                "enabled": [
+                    "canaryConfigs",
+                    "serverGroups"
+                ],
+                "disabled": []
+            }
+        }
+    },
     "pipelines": [
         {
-          "name": "Wait Pipeline Test 3",
-          "isNew": true,
-          "keepWaitingPipelines": false,
-          "limitConcurrent": false,
-          "stages": [
-            {
-              "name": "one",
-              "type": "wait",
-              "waitTime": 10
-            }  
-          ],
-          "triggers": []
+            "name": "Dinghy Pipeline Push?",
+            "keepWaitingPipelines": false,
+            "lastModifiedBy": "austin",
+            "limitConcurrent": true,
+            "parameterConfig": [
+                {
+                    "default": "1",
+                    "description": "",
+                    "hasOptions": false,
+                    "label": "Param1",
+                    "name": "Param1",
+                    "options": [
+                        {
+                            "value": ""
+                        }
+                    ],
+                    "pinned": false,
+                    "required": false
+                }
+            ],
+            "spelEvaluator": "v4",
+            "stages": [
+                {
+                    "failOnFailedExpressions": true,
+                    "isNew": true,
+                    "name": "Evaluate Variables",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "evaluateVariables",
+                    "variables": [
+                        {
+                            "key": "Var1",
+                            "value": "test"
+                        }
+                    ]
+                }
+            ],
+            "triggers": []
         }
-       ]
+    ]
 }
