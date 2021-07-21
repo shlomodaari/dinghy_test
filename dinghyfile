@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "SpelEvaluator Dinghy Pipeline Test1",
+            "name": "SpelEvaluator Dinghy Pipeline Test",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
