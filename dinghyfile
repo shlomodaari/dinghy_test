@@ -1,36 +1,56 @@
 {
-   "application":"test",
-   "globals":{
-      "save_app_on_update":true
-   },
-   "spec":{
-      "dataSources":{
-         "enabled":[
-            "canaryConfigs",
-            "serverGroups"
-         ],
-         "disabled":[
-            
-         ]
-      }
-   },
-   "pipelines":[
-      {
-         "application":"test",
-         "name":"Wait Pipeline Test 3001",
-         "isNew":true,
-         "keepWaitingPipelines":false,
-         "limitConcurrent":false,
-         "stages":[
-            {
-               "name":"two",
-               "type":"wait",
-               "waitTime":20
+    "application": "test",
+    "spec": {
+        "appmetadata": {
+            "dataSources": {
+                "enabled": [
+                    "canaryConfigs",
+                    "serverGroups"
+                ],
+                "disabled": []
             }
-         ],
-         "triggers":[
-            
-         ]
-      }
-   ]
+        }
+    },
+    "pipelines": [
+        {
+            "name": "Dinghy Pipeline Push?",
+            "keepWaitingPipelines": false,
+            "lastModifiedBy": "austin",
+            "limitConcurrent": true,
+            "parameterConfig": [
+                {
+                    "default": "1",
+                    "description": "",
+                    "hasOptions": false,
+                    "label": "Param1",
+                    "name": "Param1",
+                    "options": [
+                        {
+                            "value": ""
+                        }
+                    ],
+                    "pinned": false,
+                    "required": false
+                }
+            ],
+            "spelEvaluator": "v4",
+            "stages": [
+                {
+                    "failOnFailedExpressions": true,
+                    "isNew": true,
+                    "name": "Evaluate Variables",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "evaluateVariables",
+                    "variables": [
+                        {
+                            "key": "Var1",
+                            "value": "test"
+                        }
+                    ]
+                }
+            ],
+            "triggers": []
+        }
+    ]
 }
