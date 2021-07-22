@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "Module Variable Example",
+            "name": "Sunny is Sanity Checking spelEvaluator Again",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
@@ -14,15 +14,22 @@
                     "hasOptions": false,
                     "label": "Param1",
                     "name": "Param1",
-                    "options": [{
-                        "value": ""
-                    }],
                     "pinned": false,
                     "required": false
                 }],
-                "stages": [
-                    {{ module "wait.stage.module"}} 
-                ],
+                "spelEvaluator": "v4",
+                "stages": [{
+                    "failOnFailedExpressions": true,
+                    "isNew": true,
+                    "name": "Evaluate Variables",
+                    "refId": "1",
+                    "requisiteStageRefIds": [],
+                    "type": "evaluateVariables",
+                    "variables": [{
+                        "key": "Var1",
+                        "value": "test"
+                    }]
+                }],
                 "triggers": [
 
                 ]
