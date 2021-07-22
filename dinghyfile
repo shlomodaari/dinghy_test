@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "Sunny is Sanity Checking spelEvaluator Again",
+            "name": "Austin is Sanity Checking spelEvaluator Again JUST to be safe",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
