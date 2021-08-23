@@ -3,7 +3,7 @@
     "pipelines": [
         {
             "application": "test",
-            "name": "Austin is Sanity Checking spelEvaluator Again JUST to be safe",
+            "name": "Austin is Sanity Checking spelEvaluator Again JUST to be safe test test",
             "isNew": true,
             "keepWaitingPipelines": false,
             "limitConcurrent": false,
@@ -27,7 +27,7 @@
                     "type": "evaluateVariables",
                     "variables": [{
                         "key": "Var1",
-                        "value": "test"
+                        "value": "test2"
                     }]
                 }],
                 "triggers": [
