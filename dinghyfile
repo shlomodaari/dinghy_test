@@ -13,7 +13,7 @@
     },
     "pipelines": [
         {
-            "name": "Dinghy Pipeline Push?",
+            "name": "Dinghy Pipeline Push Test",
             "keepWaitingPipelines": false,
             "lastModifiedBy": "austin",
             "limitConcurrent": true,
