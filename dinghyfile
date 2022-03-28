@@ -27,7 +27,7 @@
                     "type": "evaluateVariables",
                     "variables": [{
                         "key": "Var1",
-                        "value": "test2"
+                        "value": "test33333"
                     }]
                 }],
                 "triggers": [
