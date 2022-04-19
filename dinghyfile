@@ -1,5 +1,5 @@
 {{ $serviceName := var "serviceName" }}
-{{ if not $serviceName }}serviceName is required.{{ end -}}
+{{ if not $serviceName }} {{ end -}}
 {
   "application": "test",
   "pipelines": [
