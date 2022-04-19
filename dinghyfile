@@ -5,14 +5,15 @@
       "application": "test",
       "name": "Dinghy Conditional Test",
       "stages": [
-        {
-          "isNew": true,
-          "name": "Wait",
-          "refId": "1",
-          "requisiteStageRefIds": [],
-          "type": "wait",
-          "waitTime": 30
-        }
+          {
+            {{ if eq .RawData.pusher.name "Samtribal" }}
+              "name": "this_is_true",
+            {{ else }}
+              "name": "this_is_false",
+            {{ end }}
+            "waitTime":  10,
+            "type": "wait"
+          }
       ]
     }
   ]
