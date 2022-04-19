@@ -1,38 +1,20 @@
 {
-    "application": "test",
-    "pipelines": [
-        {
-            "application": "test",
-            "name": "Dinghy Test Pipeline with SQL",
-            "isNew": true,
-            "keepWaitingPipelines": false,
-            "limitConcurrent": false,
-            "parameterConfig": [
-                {
-                    "default": "1",
-                    "description": "",
-                    "hasOptions": false,
-                    "label": "Param1",
-                    "name": "Param1",
-                    "pinned": false,
-                    "required": false
-                }],
-                "spelEvaluator": "v4",
-                "stages": [{
-                    "failOnFailedExpressions": true,
-                    "isNew": true,
-                    "name": "Evaluate Variables",
-                    "refId": "1",
-                    "requisiteStageRefIds": [],
-                    "type": "evaluateVariables",
-                    "variables": [{
-                        "key": "Var1",
-                        "value": "test4444444"
-                    }]
-                }],
-                "triggers": [
-
-                ]
-            }
-        ]
+  "application": "test",
+  "pipelines": [
+    {
+      "application": "conditionals",
+      "name": "Dinghy Conditional Test",
+      "stages": [
+          {
+            {{ if eq .RawData.pusher.name "Samtribal" }}
+              "name": "this_is_true",
+            {{ else }}
+              "name": "this_is_false",
+            {{ end }}
+            "waitTime":  10,
+            "type": "wait"
+          }
+      ]
+    }
+  ]
 }
