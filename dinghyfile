@@ -1,56 +1,21 @@
 {
-    "application": "test",
-    "spec": {
-        "appmetadata": {
-            "dataSources": {
-                "enabled": [
-                    "canaryConfigs",
-                    "serverGroups"
-                ],
-                "disabled": []
-            }
-        }
-    },
-    "pipelines": [
-        {
-            "name": "Dinghy Pipeline Push Test",
-            "keepWaitingPipelines": false,
-            "lastModifiedBy": "austin",
-            "limitConcurrent": true,
-            "parameterConfig": [
-                {
-                    "default": "1",
-                    "description": "",
-                    "hasOptions": false,
-                    "label": "Param1",
-                    "name": "Param1",
-                    "options": [
-                        {
-                            "value": ""
-                        }
-                    ],
-                    "pinned": false,
-                    "required": false
-                }
-            ],
-            "spelEvaluator": "v4",
-            "stages": [
-                {
-                    "failOnFailedExpressions": true,
-                    "isNew": true,
-                    "name": "Evaluate Variables",
-                    "refId": "1",
-                    "requisiteStageRefIds": [],
-                    "type": "evaluateVariables",
-                    "variables": [
-                        {
-                            "key": "Var1",
-                            "value": "test"
-                        }
-                    ]
-                }
-            ],
-            "triggers": []
-        }
-    ]
+  "applications": [
+    "jmoon"
+  ],
+  "classifier": {
+    "groupWeights": {}
+  },
+  "configVersion": "1",
+  "createdTimestamp": 1650393699983,
+  "createdTimestampIso": "2022-04-19T18:41:39.983Z",
+  "description": "",
+  "judge": {
+    "judgeConfigurations": {},
+    "name": "NetflixACAJudge-v1.0"
+  },
+  "metrics": [],
+  "name": "AustinTest",
+  "templates": {},
+  "updatedTimestamp": 1650393699983,
+  "updatedTimestampIso": "2022-04-19T18:41:39.983Z"
 }
