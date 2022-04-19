@@ -2,7 +2,7 @@
   "application": "test",
   "pipelines": [
     {
-      "application": "conditionals",
+      "application": "test",
       "name": "Dinghy Conditional Test",
       "stages": [
         {
