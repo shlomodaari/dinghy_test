@@ -11,7 +11,7 @@
             {{ if eq .RawData.pusher.name "Samtribal" }}
               "name": {{ $serviceName }},
             {{ else }}
-              "name": "this_is_false",
+              "name": {{ $serviceName }},
             {{ end }}
             "waitTime":  10,
             "type": "wait"
