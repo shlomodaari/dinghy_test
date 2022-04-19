@@ -1,3 +1,5 @@
+{{ $serviceName := var "serviceName" }}
+{{ if not $serviceName }}serviceName is required.{{ end -}}
 {
   "application": "test",
   "pipelines": [
@@ -7,7 +9,7 @@
       "stages": [
           {
             {{ if eq .RawData.pusher.name "Samtribal" }}
-              "name": "this_is_true",
+              "name": {{ $serviceName }},
             {{ else }}
               "name": "this_is_false",
             {{ end }}
