@@ -2,7 +2,7 @@
   "application": "austinapp",
   "globals": {
     "pipelineApplication": "austinapp",
-    "pipelineName": "Pipeline B"
+    "pipelineName": "Pipeline C"
   },
   "pipelines": [
     {
