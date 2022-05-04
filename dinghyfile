@@ -1,22 +1,19 @@
-{{ $serviceName := var "serviceName" }}
-{{ if not $serviceName }} {{ end -}}
 {
-  "application": "test",
+  "application": "austinapp",
+  "globals": {
+    "pipelineApplication": "austinapp",
+    "pipelineName": "Pipeline A"
+  },
   "pipelines": [
     {
-      "application": "test",
-      "name": "Dinghy Conditional Test",
+      "application": "austinapp",
+      "keepWaitingPipelines": false,
+      "limitConcurrent": true,
+      "name": "Test Pipeline ID",
       "stages": [
-          {
-            {{ if eq .RawData.pusher.name "Samtribal" }}
-              "name": {{ $serviceName }},
-            {{ else }}
-              "name": {{ $serviceName }},
-            {{ end }}
-            "waitTime":  10,
-            "type": "wait"
-          }
-      ]
+        {{ module "pipeline.stage.module" "triggerApp" }}
+      ],
+      "triggers": []
     }
   ]
 }
