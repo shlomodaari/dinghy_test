@@ -1,0 +1,11 @@
+{
+    "application": "{{ var "app" }}",
+    "pipeline": "{{ pipelineID (var "pipelineApplication" ) (var "pipelineName") }}",
+    "failPipeline": true,
+    "isNew": true,
+    "name": "Pipeline",
+    "refId": "0",
+    "requisiteStageRefIds": [],
+    "type": "pipeline",
+    "waitForCompletion": true
+}
