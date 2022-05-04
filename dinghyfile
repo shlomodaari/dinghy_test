@@ -20,6 +20,16 @@
         }
         ],
         "triggers": []
+      },
+      {
+        "application": "austinapp",
+        "keepWaitingPipelines": false,
+        "limitConcurrent": true,
+        "name": "Test Pipeline ID",
+        "stages": [
+          {{ module "pipeline.stage.module" "triggerApp" (var "pipelineApplication") "triggerPipeline" (var "pipelineName") }}
+        ],
+        "triggers": []
       }
   ]
 }
