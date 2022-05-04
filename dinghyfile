@@ -2,18 +2,34 @@
   "application": "austinapp",
   "globals": {
     "pipelineApplication": "austinapp",
-    "pipelineName": "TESTING"
+    "pipelineName": "Pipeline B"
   },
   "pipelines": [
     {
-      "application": "austinapp",
-      "keepWaitingPipelines": false,
-      "limitConcurrent": true,
-      "name": "Test Pipeline ID",
-      "stages": [
-        {{ module "pipeline.stage.module" "triggerApp" (var "pipelineApplication") "triggerPipeline" (var "pipelineName") }}
-      ],
-      "triggers": []
-    }
+        "application": "austinapp",
+        "keepWaitingPipelines": false,
+        "limitConcurrent": true,
+        "name": "{{var "pipelineName" }}",
+        "stages": [ 
+        {
+            "name": "wait",
+            "refId": "1",
+            "requisiteStageRefIds": [],
+            "type": "wait",
+            "waitTime": 10
+        }
+        ],
+        "triggers": []
+      },
+      {
+        "application": "austinapp",
+        "keepWaitingPipelines": false,
+        "limitConcurrent": true,
+        "name": "Test Pipeline ID",
+        "stages": [
+          {{ module "pipeline.stage.module" "triggerApp" (var "pipelineApplication") "triggerPipeline" (var "pipelineName") }}
+        ],
+        "triggers": []
+      }
   ]
 }
