@@ -2,7 +2,7 @@
   "application": "austinapp",
   "globals": {
     "pipelineApplication": "austinapp",
-    "pipelineName": "Pipeline A"
+    "pipelineName": "TESTING"
   },
   "pipelines": [
     {
@@ -11,7 +11,7 @@
       "limitConcurrent": true,
       "name": "Test Pipeline ID",
       "stages": [
-        {{ module "pipeline.stage.module" "triggerApp" }}
+        {{ module "pipeline.stage.module" "triggerApp" (var "pipelineApplication") "triggerPipeline" (var "pipelineName") }}
       ],
       "triggers": []
     }
