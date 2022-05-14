@@ -5,6 +5,13 @@
       "pipelineName": "Pipeline C",
       "save_app_on_update" : true
     },
+    "spec": {
+        "permissions": {
+            "READ": ["dev"],
+            "EXECUTE": ["dev"],
+            "WRITE": ["dev"]
+        }
+    },
     "pipelines": [
       {
           "application": "dinghy-test-app",
@@ -17,7 +24,7 @@
               "refId": "1",
               "requisiteStageRefIds": [],
               "type": "wait",
-              "waitTime": 12
+              "waitTime": 10
           }
           ],
           "triggers": []
