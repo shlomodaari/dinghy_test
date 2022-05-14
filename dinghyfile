@@ -1,5 +1,4 @@
 {
-    "application": "dinghy-test-app",
     "globals": {
       "pipelineApplication": "dinghy-test-app",
       "pipelineName": "Pipeline C",
@@ -12,9 +11,10 @@
             "WRITE": ["dev"]
         }
     },
+    "application": "{{var "pipelineApplication" }}",
     "pipelines": [
       {
-          "application": "dinghy-test-app",
+          "application": "{{var "pipelineApplication" }}",
           "keepWaitingPipelines": false,
           "limitConcurrent": true,
           "name": "{{var "pipelineName" }}",
@@ -24,13 +24,13 @@
               "refId": "1",
               "requisiteStageRefIds": [],
               "type": "wait",
-              "waitTime": 15
+              "waitTime": 10
           }
           ],
           "triggers": []
         },
         {
-          "application": "dinghy-test-app",
+          "application": "{{var "pipelineApplication" }}",
           "keepWaitingPipelines": false,
           "limitConcurrent": true,
           "name": "Test Pipeline ID",
