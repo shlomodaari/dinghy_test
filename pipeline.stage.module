@@ -1,5 +1,5 @@
 {
-    "application": "austinapp",
+    "application": "dinghy-test-app",
     "pipeline": "{{ pipelineID "austinapp" "Pipeline A" }}",
     "failPipeline": true,
     "isNew": true,
