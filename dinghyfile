@@ -1,4 +1,5 @@
 {
+    {{/*  Globals  */}}
     {{ $pipelineApplication := "dinghy-test-app" }}
     {{ $pipelineName := "Pipeline C" }}
     "application": "{{var "pipelineApplication" }}",
