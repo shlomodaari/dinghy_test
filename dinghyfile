@@ -7,10 +7,10 @@
     },
     "spec": {
         "permissions": {
-            "READ": [ "dev"],
-            "EXECUTE": [ "dev" ],
-            "WRITE": [ "dev" ]
-        },
+            "READ": ["dev"],
+            "EXECUTE": ["dev"],
+            "WRITE": ["dev"]
+    },
     "pipelines": [
       {
           "application": "dinghy-test-app",
