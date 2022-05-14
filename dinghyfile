@@ -1,7 +1,9 @@
 {
-    {{/*  Globals  */}}
-    {{ $pipelineApplication := "dinghy-test-app" }}
-    {{ $pipelineName := "Pipeline C" }}
+    "globals": {
+      "pipelineApplication": "dinghy-test-app",
+      "pipelineName": "Pipeline C",
+      "save_app_on_update" : true
+    },
     "application": "{{var "pipelineApplication" }}",
     "pipelines": [
       {
