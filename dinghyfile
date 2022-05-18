@@ -1,6 +1,7 @@
 {
     "globals": {
       "pipelineApplication": "dinghy-test-app",
+      "someApplication": "dinghy-test123",
       "pipelineName": "Pipeline C",
       "save_app_on_update" : true
     },
@@ -28,7 +29,7 @@
           "limitConcurrent": true,
           "name": "Test Pipeline ID",
           "stages": [
-            {{ module "pipeline.stage.module" "triggerApp" (var "pipelineApplication") "triggerPipeline" (var "pipelineName") }}
+            {{ module "pipeline.stage.module" "triggerApp" (var "someApplication") "triggerPipeline" (var "pipelineName") }}
           ],
           "triggers": []
         }
