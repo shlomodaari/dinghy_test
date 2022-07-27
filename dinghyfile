@@ -1,41 +1,19 @@
 {
-    "application": "test",
-    "pipelines": [
-      {
-          "application": "test",
-          "keepWaitingPipelines": false,
-          "limitConcurrent": true,
-          "name": "Dinghy Canary ConfigID",
-          "stages": [ 
-            {
-            "analysisType": "realTime",
-            "canaryConfig": {
-                "canaryConfigId": "${#canaryConfigNameToId('shlomo-test', 'test')}",
-                "lifetimeDuration": "PT0H3M",
-                "metricsAccountName": "prometheus",
-                "scopes": [
-                {
-                    "controlLocation": "austin-spin-ftw",
-                    "controlScope": "nginx-deployment-baseline",
-                    "experimentLocation": "austin-spin-ftw",
-                    "experimentScope": "nginx-deployment-testing",
-                    "extendedScopeParams": {},
-                    "scopeName": "default"
-                }
-                ],
-                "scoreThresholds": {
-                "marginal": null,
-                "pass": null
-                },
-                "storageAccountName": "aws-bucket"
-            },
-            "name": "Canary Analysis",
-            "refId": "1",
-            "requisiteStageRefIds": [],
-            "type": "kayentaCanary"
-            }
-          ],
-          "triggers": []
+    “application”: “test",
+    “pipelines”: [
+        {
+            “application”: “test”,
+            “name”: “dinghy redis”,
+            “keepWaitingPipelines”: false,
+            “limitConcurrent”: true,
+            “stages”: [{
+                “name”: “Wait”,
+                “refId”: “1",
+                “requisiteStageRefIds”: [],
+                “type”: “wait”,
+                “waitTime”: 10
+            }],
+            “triggers”: []
         }
     ]
 }
