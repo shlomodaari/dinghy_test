@@ -1,6 +1,6 @@
 {
   "applications": [
-    "jmoon"
+    "shlomotest-dinghy"
   ],
   "classifier": {
     "groupWeights": {}
@@ -14,7 +14,7 @@
     "name": "NetflixACAJudge-v1.0"
   },
   "metrics": [],
-  "name": "AustinTest",
+  "name": "shlomo-test-dinghy",
   "templates": {},
   "updatedTimestamp": 1650393699983,
   "updatedTimestampIso": "2022-04-19T18:41:39.983Z"
